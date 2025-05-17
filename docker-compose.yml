@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+  grafana-lark-api:
+    build: .
+    ports:
+      - "5001:5001"  # Map host port 5001 to container port 5001
+    env_file:
+      - .env  # Load environment variables from .env file
+    restart: unless-stopped  # Automatically restart the container if it stops
+
+    volumes:
+      - .:/app  # Mount the current directory to /app in the container
+    command: flask run --host=0.0.0.0 --port=5001  # Explicitly define the command to run
