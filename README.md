@@ -47,7 +47,7 @@ grafana_lark_alerts_connector/
 ### **Environment Setup**
 1. Clone the repository:
    ```bash
-   git clone http://app.sasakonnect.net:20207/otienokevin/grafana_lark_alerts_connector
+   git clone https://github.com/elvas254/grafana_lark_alerts_connector
    cd grafana_lark_alerts_connector
    ```
 
@@ -97,13 +97,13 @@ Request Body Example
     {
       "status": "firing",
       "labels": {
-        "alertname": "QWETU Pop Power Monitoring",
-        "name": "Qwetu PoP (Host: G45-FIBER)",
+        "alertname": "sms monitor",
+        "name": " my sms",
         "host": "server-01",
-        "url": "172.16.0.243"
+        "url": "192.168.0.1"
       },
       "annotations": {
-        "description": "Power outage at QWETU Pop"
+        "description": "no sms recieved"
       },
       "startsAt": "2025-03-06T10:15:30Z"
     }
